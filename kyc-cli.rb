@@ -5,21 +5,21 @@
 class KycCli < Formula
   desc "Terminal-only crypto swap (the kyc.rip aggregator as a TUI)"
   homepage "https://swap.kyc.rip"
-  version "0.1.36"
+  version "0.1.37"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kyc-rip/cli/releases/download/v0.1.36/kyc-cli_0.1.36_darwin_amd64.tar.gz"
-      sha256 "3d36266c3a9176628bc25c7db565fb284ede9e475ccc4233f00f7be1176f4b51"
+      url "https://github.com/kyc-rip/cli/releases/download/v0.1.37/kyc-cli_0.1.37_darwin_amd64.tar.gz"
+      sha256 "7cb03be30e366c040ef649b80bbcb0596c8d839de01a85659f29a49c8774ef29"
 
       define_method(:install) do
         bin.install "kyc-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kyc-rip/cli/releases/download/v0.1.36/kyc-cli_0.1.36_darwin_arm64.tar.gz"
-      sha256 "6fa4d3f00f39687ab4bf52c59bccdd4d18c9e7a20338885d65a6076423f734ed"
+      url "https://github.com/kyc-rip/cli/releases/download/v0.1.37/kyc-cli_0.1.37_darwin_arm64.tar.gz"
+      sha256 "8bc5fca08c5bbec3591d10699dd4fb76d9708f8a7d3f928959d11d8c0213538f"
 
       define_method(:install) do
         bin.install "kyc-cli"
@@ -29,15 +29,15 @@ class KycCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kyc-rip/cli/releases/download/v0.1.36/kyc-cli_0.1.36_linux_amd64.tar.gz"
-      sha256 "16105368514d1feeb0065343dbf791cd21be47482058bf07ab34f4263a00492c"
+      url "https://github.com/kyc-rip/cli/releases/download/v0.1.37/kyc-cli_0.1.37_linux_amd64.tar.gz"
+      sha256 "aa6d83cba0c921116bf63e7ecaaa34ec807d95684ef7c26b1f83132cc1ee9fd0"
       define_method(:install) do
         bin.install "kyc-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kyc-rip/cli/releases/download/v0.1.36/kyc-cli_0.1.36_linux_arm64.tar.gz"
-      sha256 "34ccedd5820b478fc1a46cef8dcf13bc5f19bd0dcdb1fddea07a05a1628c1bef"
+      url "https://github.com/kyc-rip/cli/releases/download/v0.1.37/kyc-cli_0.1.37_linux_arm64.tar.gz"
+      sha256 "c6adea62203a58a897fa38783ac940677e0b0e1852f5d39c5ef1a871f18c0f27"
       define_method(:install) do
         bin.install "kyc-cli"
       end
